@@ -1,6 +1,6 @@
-package Sept.ex_09092024;
+package Sept.ex_09092024_boolean_datatype;
 
-public class Lap004 {
+public class Lab004_boolean {
     public static void main(String[] args) {
         boolean Do_you_have_car = true;
         boolean do_you_have_interest_in_coding = true;
