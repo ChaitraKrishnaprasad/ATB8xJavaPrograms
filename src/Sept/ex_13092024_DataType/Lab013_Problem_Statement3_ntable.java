@@ -1,5 +1,5 @@
 package Sept.ex_13092024_DataType;
-//Problem Statement - Print the table of user defined value for n
+//Problem Statement - Print the table of user defined value for n // Assignment1
 public class Lab013_Problem_Statement3_ntable {
     public static void main(String[] args) {
         int n = 10;
