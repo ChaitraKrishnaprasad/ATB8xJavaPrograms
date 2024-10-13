@@ -1,6 +1,6 @@
 package Sept.ex_23092024_ConditionalLoops_Switch;
 
-public class Lab0076_SwitchCondition_Concatination {
+public class Lab076_SwitchCondition_Concatination {
     public static void main(String[] args) {
         char ch = 'C';
         switch (ch){
