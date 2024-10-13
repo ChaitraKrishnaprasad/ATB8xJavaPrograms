@@ -1,6 +1,5 @@
 package Sept.ex_25092024_Loops;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Lab097_User_Inputs {
