@@ -1,4 +1,6 @@
-public class ex_20092024_Task4_leapyear {
+package Sept.DailyTasks;
+
+public class ex_20092024_Task4 {
     public static void main(String[] args) {
         int year = 2024;
 //        if (year % 4 == 0) {
@@ -17,7 +19,7 @@ public class ex_20092024_Task4_leapyear {
             System.out.println("Leap year");
         } else {
             System.out.println("Not a leap year");
-
         }
     }
 }
+
