@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class Task3_23092024 {
+public class ex_23092024_Task3 {
     public static void main(String[] args) {
         int choice = 1;  // Set the choice: 1 for km to miles, 2 for Fahrenheit to Celsius
 

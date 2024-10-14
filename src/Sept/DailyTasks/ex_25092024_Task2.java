@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class Task2_25092024 {
+public class ex_25092024_Task2 {
     public static void main(String[] args) {
 //Prime Number from 1 to 100. (for loop)
 

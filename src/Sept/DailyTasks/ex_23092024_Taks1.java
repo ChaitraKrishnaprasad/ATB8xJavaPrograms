@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class Taks1_23092024 {
+public class ex_23092024_Taks1 {
     public static void main(String[] args) {
         int num1 = 10;
         int num2 = 5;

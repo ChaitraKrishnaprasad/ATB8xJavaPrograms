@@ -1,8 +1,6 @@
 package Sept.DailyTasks;
 
-import java.util.SortedMap;
-
-public class Task1_25092024 {
+public class ex_25092024_Task1 {
     public static void main(String[] args) {
         // Table of number n = 10, print table with For .
         int n = 10;

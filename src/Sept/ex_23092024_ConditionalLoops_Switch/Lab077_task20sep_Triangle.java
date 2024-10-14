@@ -1,5 +1,4 @@
-
-        // Given three input values representing the lengths of the sides, determine
+// Given three input values representing the lengths of the sides, determine
 
 // if the triangle is equilateral (all sides are equal),
 
