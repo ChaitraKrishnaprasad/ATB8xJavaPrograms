@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class ex_27092024_Task3 {
+public class ex_27092024_Task3_sumof_1to100 {
     public static void main(String[] args) {
 
         //Write a Java program that calculates the sum of numbers from 1 to 100 using a while loop.

@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class ex_23092024_Task2 {
+public class ex_23092024_Task2_Switch_CorrespondingMonth {
     public static void main(String[] args) {
 
         //Write a program that takes an integer input (1-12) and prints the name of the corresponding month using a switch statement.

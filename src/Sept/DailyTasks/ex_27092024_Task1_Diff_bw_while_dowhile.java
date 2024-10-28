@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class ex_27092024_Task1 {
+public class ex_27092024_Task1_Diff_bw_while_dowhile {
     public static void main(String[] args) {
         //Give me example of while vs do while loop in Lab ex.
 // While Statement

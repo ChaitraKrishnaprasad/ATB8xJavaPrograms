@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class ex_25092024_Task3 {
+public class ex_25092024_Task3_fractorial_number {
     public static void main(String[] args) {
         //Factorial Program - n = 5 , Output = 120 //  n = 5 ->  Fact = 5*4*3*2*1 = 120
         //

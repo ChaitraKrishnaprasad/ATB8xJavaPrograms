@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class ex_23092024_Taks1 {
+public class ex_23092024_Taks1_Airthamatic_Operator {
     public static void main(String[] args) {
         int num1 = 10;
         int num2 = 5;

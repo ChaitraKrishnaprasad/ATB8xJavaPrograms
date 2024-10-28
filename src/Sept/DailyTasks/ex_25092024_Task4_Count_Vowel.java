@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class ex_25092024_Task4 {
+public class ex_25092024_Task4_Count_Vowel {
     public static void main(String[] args) {
 
         // Count vowels and consonants in a String. (pramod) - v = 2 , c = 4

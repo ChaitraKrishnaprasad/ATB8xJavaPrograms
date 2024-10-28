@@ -1,6 +1,6 @@
 package Sept.DailyTasks;
 
-public class ex_20092024_Task4 {
+public class ex_20092024_Task4_Leapyear {
     public static void main(String[] args) {
         int year = 2024;
 //        if (year % 4 == 0) {
