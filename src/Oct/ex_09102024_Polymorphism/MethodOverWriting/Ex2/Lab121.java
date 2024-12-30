@@ -17,7 +17,7 @@ public class Lab121 {
         //WebDriver driver = new ChromeDriver();
         //This above code is Dynamic class, we can see this in selenium
         //WebDriver is Father
-        //ChromeDeiver is child
+        //ChromeDriver is child
     }
 }
 
