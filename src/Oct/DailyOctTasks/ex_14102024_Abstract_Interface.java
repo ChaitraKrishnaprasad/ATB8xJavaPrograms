@@ -1,7 +1,10 @@
 package Oct.DailyOctTasks;
 
+import java.sql.SQLOutput;
+
 public class ex_14102024_Abstract_Interface {
     public static void main(String[] args) {
+        // Dynamic dispatch with 2 classess object is used
         book myBook = new printMyBook("Harry Potter", "J.K. Rowling",100);
         System.out.println(myBook.getDetails());
     }
@@ -39,7 +42,7 @@ abstract class book{
         return prince;
     }
     //Abstract method to get book details
-    public abstract String getDetails();
+    abstract String getDetails();
 }
 //extends class
 class printMyBook extends book{
@@ -51,5 +54,11 @@ class printMyBook extends book{
     @Override
     public String getDetails() {
         return getName()+", "+getAuthor()+", "+(int) getPrince();
+
+        //OR
+        //void getDetails(){
+//        System.out.println(getName());
+//        System.out.println(getAuthor());
+//        System.out.println(getDetails());
     }
 }
