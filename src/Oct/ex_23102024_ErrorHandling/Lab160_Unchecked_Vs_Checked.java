@@ -1,4 +1,4 @@
-package Oct.ex_23102024;
+package Oct.ex_23102024_ErrorHandling;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

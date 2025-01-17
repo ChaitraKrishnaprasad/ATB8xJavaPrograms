@@ -1,4 +1,4 @@
-package Oct.ex_23102024;
+package Oct.ex_23102024_ErrorHandling;
 
 public class Lab158_interviewQ {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Oct.ex_23102024;
+package Oct.ex_23102024_ErrorHandling;
 
 public class Lab161_Bank_CustExcep {
     private String currency;
