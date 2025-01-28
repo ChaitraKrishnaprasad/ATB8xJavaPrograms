@@ -1,4 +1,4 @@
-package Oct.ex_28102024_CollectionFrameWork;
+package Oct.ex_28102024_CollectionFrameWorkP1;
 
 public class Lab171_CF {
     public static void main(String[] args) {

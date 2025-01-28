@@ -1,6 +1,5 @@
-package Oct.ex_28102024_CollectionFrameWork;
+package Oct.ex_28102024_CollectionFrameWorkP1;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
@@ -26,9 +25,7 @@ public class Lab178_Vector {
         System.out.println(v);
         System.out.println(v.size());
         System.out.println(v.isEmpty());
-        System.out.println(v.indexOf("Chait"));
-        System.out.println(v.lastIndexOf("Chait"));
-
+        System.out.println(v.indexOf("Pruthvi"));
         //Only Problem with Vector is Thread Safe, Synchronised.
         //Time will be consuming
         //one by one using and slower in process

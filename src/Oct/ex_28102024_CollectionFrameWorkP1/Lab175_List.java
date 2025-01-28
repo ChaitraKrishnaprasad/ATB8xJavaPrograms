@@ -1,4 +1,4 @@
-package Oct.ex_28102024_CollectionFrameWork;
+package Oct.ex_28102024_CollectionFrameWorkP1;
 
 import java.util.ArrayList;
 import java.util.Collections;
