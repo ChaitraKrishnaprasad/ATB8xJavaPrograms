@@ -8,6 +8,15 @@ public class Lab191_Generic {
        temp2( true); // genric supporting boolean
        temp2( 20); // genric supporting integer
 
+        //Generic we have used in Mathfunction using different data type
+        Math.max(1,2); // int
+        Math.max(1.2,2.4); // double
+        Math.max(1.23f,2.45f); // float
+        Math.max(332435454,234353554);//long
+
+
+
+
     }
 
     public static void temp (Integer a){
