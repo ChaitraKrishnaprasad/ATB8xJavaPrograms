@@ -5,9 +5,11 @@ public class Lab035_Operator_NEW_n_INSTANT_operator {
         //This will come in future in depth
         //New Operator
         String S1 = new String("Chaitra");
+        Integer i = new Integer(1);
         System.out.println(S1);
         //Instant operator
         System.out.println(S1 instanceof String);
+        System.out.println(i instanceof Integer);
     }
 }
 
