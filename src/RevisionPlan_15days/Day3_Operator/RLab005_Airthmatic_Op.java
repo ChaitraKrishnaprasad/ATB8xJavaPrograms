@@ -1,4 +1,4 @@
-package RevisionPlan_15days.Operator;
+package RevisionPlan_15days.Day3_Operator;
 
 import java.util.Scanner;
 

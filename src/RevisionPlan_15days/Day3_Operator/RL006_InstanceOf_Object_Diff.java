@@ -1,4 +1,4 @@
-package RevisionPlan_15days.Operator;
+package RevisionPlan_15days.Day3_Operator;
 
 public class RL006_InstanceOf_Object_Diff {
     public static void main(String[] args) {
