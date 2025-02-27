@@ -2,7 +2,7 @@ package RevisionPlan_15days.Day4_Conditional_Loop;
 
 import java.util.Scanner;
 
-public class RLab010_SwitchStatement {
+public class RLab011_SwitchStatement {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number 1-7 to identify the day");

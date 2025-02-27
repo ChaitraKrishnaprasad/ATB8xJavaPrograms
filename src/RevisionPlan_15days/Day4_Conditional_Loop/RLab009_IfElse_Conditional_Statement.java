@@ -2,7 +2,7 @@ package RevisionPlan_15days.Day4_Conditional_Loop;
 
 import java.util.Scanner;
 
-public class RLap009_IfElse_Conditional_Statement {
+public class RLab009_IfElse_Conditional_Statement {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your age -->");
