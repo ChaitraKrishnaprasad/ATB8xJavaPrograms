@@ -1,0 +1,734 @@
+{
+	"info": {
+		"_postman_id": "f38322fe-5cf8-4225-8dcb-c49caab7642a",
+		"name": "Project#5 NEO API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28398995",
+		"_collection_link": "https://api-testing-team-9258.postman.co/workspace/API-Testing-Team-Workspace~97352bd9-bc71-4954-9b4d-14d01b6ac5c1/collection/28398995-f38322fe-5cf8-4225-8dcb-c49caab7642a?action=share&source=collection_link&creator=28398995"
+	},
+	"item": [
+		{
+			"name": "Opening URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "content-length",
+						"value": "0"
+					},
+					{
+						"key": "origin",
+						"value": "https://admin.learn.futurense.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://admin.learn.futurense.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-storage-access",
+						"value": "active"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-client-data",
+						"value": "CJS2yQEIprbJAQipncoBCID+ygEIkqHLAQiKo8sBCIWgzQEY9snNAQ=="
+					},
+					{
+						"key": "Cookie",
+						"value": "__Secure-3PSID=g.a000uAjwVB675-bkX6UQCRu0vZOXYCx1xK0n5GtDOMWzeLY-LLdQ55ZiDH02j1B0tn9gjvbxagACgYKAQsSARUSFQHGX2MinCSl7jNJ7oldKYFgvApG0hoVAUF8yKpNW8tfC8xznKGe4_kEnUvi0076; __Secure-3PAPISID=xwvNABvL2U8ypwro/AR2Hw3cWKYP_rdB0w; NID=522=EDOHhsjTychwcWudk2K5UzrR3Y_0LxcuXVYiDGT6touRXwx7cvUb870rsJO2qElCaQao-mN9u3q9oNZr5PgylHwVg49x4sVmp-izqxhuJuxADjYDQJuAUfgMOfb3LfaJ93oJj6HGR_TrdG0l805ZIDP1vELpEKAZT7is_IWhNJQIVPouUHQrGrQCZeMc1XZlCXxV29ef1pIKY20eKcEKLAfN24s8T8t3Zx0zwzWYXA7iIWVwrIpz_7LYsBt5lEbhcC4-BEU3uk37uPganFz1qb8GdWkPJkiAl-Z6b5gzgCcOccJaTi-Dlz6yAvK3C4u_b0f_8D5a-qVEFI6YH7HPemzSpMCmYqi-1QxGzdjdpkHYpNhvRlbuyemz6vfSNDr3IuXK7BM90uPL10Lz2_Lt_QmxClyCV7_xH6XDX7M7K0XEs4nZ8aGU31G_MWSijVBtO7qjxHAtNgEXD8p_4hRg80ujXOAmygVGGSY9AqzCzX34aHXiFqMo-i68oXZPaOw1Lt3wXBvAYhgV76lIrBGQ5GQFaM33pdE2Gtf5_E8t2gSVXkU368Y-mVA5fzputXPe80YTnX3fdspgadhclnNhbmxXbY117S50lZppXUu_RAvlya2OhVLjEqMWVUEdZwiFkjHr7t7DE0XDgAsSd3if2RygX43OB97YYHPmE6d4i0enpYnr1r0mmOtX7GTAbbe6fv_JRF0-p3iFqttydwEI1mSJ9q3_VB3WWBHOnP1ajXRMWJwFzAOXiEjs5CPSU00NwyKkGzXiFW9Dte_PfjlbPu3J1KbZjAgPvlzmbIRs1dOl4rmT67jVgPbZIro_YGJ1IIkk6Yd9FGnXo_O0PryVRUFbPkCcYOSj-HteXoNBi2Z37dN5HVD7XiJxMsYIyuUW2pwi5N2U4fYflvfpqN8z4So378F6WxUkZ9RYVaoqnhpF7mwuJk86s6jF2Du3BwvjhOWlE6ybehTy4A2ttL3zZR2dFnBVVYLd-JQi3CFf3VzqIdguPAYI_l0StcIcRF4_XKMu9CkxF1qfqn9dyu4qS50dUgebl_PTxWftIVmMmvlasfRBu_uUp7lTECoYdRfkOo8nSgnEyDSTlhQTh9LV_jnMUXTy2HSBUg1cosdczPwbotjrUOkpXGHOkw7-JLmD4PZDaSKGhoHGwtZDBlXPr1FGMIYHJZB6pQYK-cNrjhJN4t0XNxqv7Wr8x7jEafeV3sUKmapRRXbkipYuMFRytKIgxPLlNnD_mnbctdmBc20rqkV8Sz_bkJ4_XAKtm7aG9Dl5EDNja0bpZeiIlSWnvGAEIhl92WaSwMWRCCCcx3cLQrgsINSsYjLKXuwEQA5V9L7DA372xUyr9upj_qqQnQoayduUj8kk51kj0Ryef26Y-1Ku2aUS-W4QpT7HFzNnJO3HY8Vc-vS1oJnpz4Ii-rVS1zGk8OAQlBAOwD9xWMl30u_IpLqXUSMuypRPDhB1w6-InhK4cYl2MqcxBD9aycOnmUqlACp-dLNlz7y47ggTEWhMJZuYTlFmE9xWK2ygp92FgAqur2H91v1_5V3baKRWrpGI1zMOKgN_Zxq2MkNsce9AUwNwp_jUT54QawLBLa5cqbHNpDJ6-wxl7mva2QeCaiYZwLLt9kPITxdLljo1WsFq_yAPNEPoyYBL0u6ULv5EgeqiCMYBY-rUiRWFSZgil3S8A_YQJ1rnN5wzl_BlgQF9bgOEhw9gRTZsHEVybX_6RaQAMLgv69eTjOCLaeSHSJX4jP5rCeHyL6Kmnsw; __Secure-3PSIDTS=sidts-CjIBEJ3XV4j_lnVyOO_I94Qkm1zhOq4nY0mAttr3DAjp00JEj6iSiGSzwhRlYfUZ3EKO2BAA; __Secure-3PSIDCC=AKEyXzXyZg2dWunpG9S7a7l292b6m2Tz-UgBrdP6WHCHZBLJ4CGTlsMhSmDuW7Rfl9-uOQBzu9E4"
+					}
+				],
+				"url": {
+					"raw": "https://analytics.google.com/g/collect?v=2&tid=G-0FNBXHRR67&gtm=45je52q0v874128609za200&_p=1740992245457&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~102640600~102658453~102717421~102732003&cid=1727256307.1718083763&ul=en-us&sr=1536x864&uaa=x86&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CGoogle%2520Chrome%3B133.0.6943.142%7CChromium%3B133.0.6943.142&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&are=1&pae=1&frm=0&pscdl=noapi&_eu=AEA&_s=5&dp=%2Flogin&sid=1740989945&sct=13&seg=1&dl=https%3A%2F%2Fadmin.learn.futurense.com%2Flogin&dr=https%3A%2F%2Fadmin.learn.futurense.com%2Fschool%2Ftest&dt=Futurense&en=scroll&epn.percent_scrolled=90&_et=5312&tfd=22197",
+					"protocol": "https",
+					"host": [
+						"analytics",
+						"google",
+						"com"
+					],
+					"path": [
+						"g",
+						"collect"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": "2"
+						},
+						{
+							"key": "tid",
+							"value": "G-0FNBXHRR67"
+						},
+						{
+							"key": "gtm",
+							"value": "45je52q0v874128609za200"
+						},
+						{
+							"key": "_p",
+							"value": "1740992245457"
+						},
+						{
+							"key": "gcd",
+							"value": "13l3l3l3l1l1"
+						},
+						{
+							"key": "npa",
+							"value": "0"
+						},
+						{
+							"key": "dma",
+							"value": "0"
+						},
+						{
+							"key": "tag_exp",
+							"value": "101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~102640600~102658453~102717421~102732003"
+						},
+						{
+							"key": "cid",
+							"value": "1727256307.1718083763"
+						},
+						{
+							"key": "ul",
+							"value": "en-us"
+						},
+						{
+							"key": "sr",
+							"value": "1536x864"
+						},
+						{
+							"key": "uaa",
+							"value": "x86"
+						},
+						{
+							"key": "uab",
+							"value": "64"
+						},
+						{
+							"key": "uafvl",
+							"value": "Not(A%253ABrand%3B99.0.0.0%7CGoogle%2520Chrome%3B133.0.6943.142%7CChromium%3B133.0.6943.142"
+						},
+						{
+							"key": "uamb",
+							"value": "0"
+						},
+						{
+							"key": "uam",
+							"value": ""
+						},
+						{
+							"key": "uap",
+							"value": "Windows"
+						},
+						{
+							"key": "uapv",
+							"value": "19.0.0"
+						},
+						{
+							"key": "uaw",
+							"value": "0"
+						},
+						{
+							"key": "are",
+							"value": "1"
+						},
+						{
+							"key": "pae",
+							"value": "1"
+						},
+						{
+							"key": "frm",
+							"value": "0"
+						},
+						{
+							"key": "pscdl",
+							"value": "noapi"
+						},
+						{
+							"key": "_eu",
+							"value": "AEA"
+						},
+						{
+							"key": "_s",
+							"value": "5"
+						},
+						{
+							"key": "dp",
+							"value": "%2Flogin"
+						},
+						{
+							"key": "sid",
+							"value": "1740989945"
+						},
+						{
+							"key": "sct",
+							"value": "13"
+						},
+						{
+							"key": "seg",
+							"value": "1"
+						},
+						{
+							"key": "dl",
+							"value": "https%3A%2F%2Fadmin.learn.futurense.com%2Flogin"
+						},
+						{
+							"key": "dr",
+							"value": "https%3A%2F%2Fadmin.learn.futurense.com%2Fschool%2Ftest"
+						},
+						{
+							"key": "dt",
+							"value": "Futurense"
+						},
+						{
+							"key": "en",
+							"value": "scroll"
+						},
+						{
+							"key": "epn.percent_scrolled",
+							"value": "90"
+						},
+						{
+							"key": "_et",
+							"value": "5312"
+						},
+						{
+							"key": "tfd",
+							"value": "22197"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://analytics.google.com/g/collect?v=2&tid=G-0FNBXHRR67&gtm=45je52q0v874128609za200&_p=1740992245457&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101732282~101732284~102067808~102482433~102539968~102558064~102587591~102605417~102640600~102658453~102717421~102732003&cid=1727256307.1718083763&ul=en-us&sr=1536x864&uaa=x86&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CGoogle%2520Chrome%3B133.0.6943.142%7CChromium%3B133.0.6943.142&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&are=1&pae=1&frm=0&pscdl=noapi&_eu=AEA&_s=5&dp=%2Flogin&sid=1740989945&sct=13&seg=1&dl=https%3A%2F%2Fadmin.learn.futurense.com%2Flogin&dr=https%3A%2F%2Fadmin.learn.futurense.com%2Fschool%2Ftest&dt=Futurense&en=scroll&epn.percent_scrolled=90&_et=5312&tfd=22197' \\\r\n  -X 'POST' \\\r\n  -H 'accept: */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'content-length: 0' \\\r\n  -b '__Secure-3PSID=g.a000uAjwVB675-bkX6UQCRu0vZOXYCx1xK0n5GtDOMWzeLY-LLdQ55ZiDH02j1B0tn9gjvbxagACgYKAQsSARUSFQHGX2MinCSl7jNJ7oldKYFgvApG0hoVAUF8yKpNW8tfC8xznKGe4_kEnUvi0076; __Secure-3PAPISID=xwvNABvL2U8ypwro/AR2Hw3cWKYP_rdB0w; NID=522=EDOHhsjTychwcWudk2K5UzrR3Y_0LxcuXVYiDGT6touRXwx7cvUb870rsJO2qElCaQao-mN9u3q9oNZr5PgylHwVg49x4sVmp-izqxhuJuxADjYDQJuAUfgMOfb3LfaJ93oJj6HGR_TrdG0l805ZIDP1vELpEKAZT7is_IWhNJQIVPouUHQrGrQCZeMc1XZlCXxV29ef1pIKY20eKcEKLAfN24s8T8t3Zx0zwzWYXA7iIWVwrIpz_7LYsBt5lEbhcC4-BEU3uk37uPganFz1qb8GdWkPJkiAl-Z6b5gzgCcOccJaTi-Dlz6yAvK3C4u_b0f_8D5a-qVEFI6YH7HPemzSpMCmYqi-1QxGzdjdpkHYpNhvRlbuyemz6vfSNDr3IuXK7BM90uPL10Lz2_Lt_QmxClyCV7_xH6XDX7M7K0XEs4nZ8aGU31G_MWSijVBtO7qjxHAtNgEXD8p_4hRg80ujXOAmygVGGSY9AqzCzX34aHXiFqMo-i68oXZPaOw1Lt3wXBvAYhgV76lIrBGQ5GQFaM33pdE2Gtf5_E8t2gSVXkU368Y-mVA5fzputXPe80YTnX3fdspgadhclnNhbmxXbY117S50lZppXUu_RAvlya2OhVLjEqMWVUEdZwiFkjHr7t7DE0XDgAsSd3if2RygX43OB97YYHPmE6d4i0enpYnr1r0mmOtX7GTAbbe6fv_JRF0-p3iFqttydwEI1mSJ9q3_VB3WWBHOnP1ajXRMWJwFzAOXiEjs5CPSU00NwyKkGzXiFW9Dte_PfjlbPu3J1KbZjAgPvlzmbIRs1dOl4rmT67jVgPbZIro_YGJ1IIkk6Yd9FGnXo_O0PryVRUFbPkCcYOSj-HteXoNBi2Z37dN5HVD7XiJxMsYIyuUW2pwi5N2U4fYflvfpqN8z4So378F6WxUkZ9RYVaoqnhpF7mwuJk86s6jF2Du3BwvjhOWlE6ybehTy4A2ttL3zZR2dFnBVVYLd-JQi3CFf3VzqIdguPAYI_l0StcIcRF4_XKMu9CkxF1qfqn9dyu4qS50dUgebl_PTxWftIVmMmvlasfRBu_uUp7lTECoYdRfkOo8nSgnEyDSTlhQTh9LV_jnMUXTy2HSBUg1cosdczPwbotjrUOkpXGHOkw7-JLmD4PZDaSKGhoHGwtZDBlXPr1FGMIYHJZB6pQYK-cNrjhJN4t0XNxqv7Wr8x7jEafeV3sUKmapRRXbkipYuMFRytKIgxPLlNnD_mnbctdmBc20rqkV8Sz_bkJ4_XAKtm7aG9Dl5EDNja0bpZeiIlSWnvGAEIhl92WaSwMWRCCCcx3cLQrgsINSsYjLKXuwEQA5V9L7DA372xUyr9upj_qqQnQoayduUj8kk51kj0Ryef26Y-1Ku2aUS-W4QpT7HFzNnJO3HY8Vc-vS1oJnpz4Ii-rVS1zGk8OAQlBAOwD9xWMl30u_IpLqXUSMuypRPDhB1w6-InhK4cYl2MqcxBD9aycOnmUqlACp-dLNlz7y47ggTEWhMJZuYTlFmE9xWK2ygp92FgAqur2H91v1_5V3baKRWrpGI1zMOKgN_Zxq2MkNsce9AUwNwp_jUT54QawLBLa5cqbHNpDJ6-wxl7mva2QeCaiYZwLLt9kPITxdLljo1WsFq_yAPNEPoyYBL0u6ULv5EgeqiCMYBY-rUiRWFSZgil3S8A_YQJ1rnN5wzl_BlgQF9bgOEhw9gRTZsHEVybX_6RaQAMLgv69eTjOCLaeSHSJX4jP5rCeHyL6Kmnsw; __Secure-3PSIDTS=sidts-CjIBEJ3XV4j_lnVyOO_I94Qkm1zhOq4nY0mAttr3DAjp00JEj6iSiGSzwhRlYfUZ3EKO2BAA; __Secure-3PSIDCC=AKEyXzXyZg2dWunpG9S7a7l292b6m2Tz-UgBrdP6WHCHZBLJ4CGTlsMhSmDuW7Rfl9-uOQBzu9E4' \\\r\n  -H 'origin: https://admin.learn.futurense.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://admin.learn.futurense.com/' \\\r\n  -H 'sec-ch-ua: \"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'sec-fetch-storage-access: active' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \\\r\n  -H 'x-client-data: CJS2yQEIprbJAQipncoBCID+ygEIkqHLAQiKo8sBCIWgzQEY9snNAQ=='"
+			},
+			"response": []
+		},
+		{
+			"name": "Login API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://admin.learn.futurense.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://admin.learn.futurense.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"elon@iamneo.ai\",\"password\":\"LPvVaskp2PYwUZd\",\"school_code\":\"futurense299\",\"googleToken\":\"03AFcWeA6MNXxz-IF1sccjNfoqu2dTxrHOoe1ykUaQiC9SxYMM3RuIgjQRzSvGniAxNSe3iIB49lVBXXud127jcva1exlJVJPgcNxK3VKu7v-MvBm7RXcKsFbfJABaWyMPVcZKC4Geg6re4zNz4_XKp2x1ziK2msxtiOKsB_3Y-uKZtoX2dT6Q5bKCTTwW8oxEPOf55fM7MRGHO5TuGrqzBz4AepwCfsUeT_OynzhfGxrdIlu2hC6Y2zb7A6OzPBTTbEoMPAoqgnteoiAFkruYl70hyVZdvLeVZGUtdHrriRW-91j3UXKtBPvKJ_aA3UYF2lY3cz-nr4sXzeQk1CKi6_xcbobKOyf2iUXW1dIvhMLiv_S5ZiFpTwpNka2sucgthbKdpjvw34e3_5eNnS1iJXtVw9x7_5lGlzNBov3IuCjSgoR4l9-kRkFhZs2Dtes1yejuh1uwZWv8oDUgblteHFwV1VKKZ-5n-8dbX-jMJ7aSu_ZB2b9jS5DEzsY1wpsvgFZJ_VZ6lcmcQv98bl2WWw8D-o1tuYE8JzOP_04tQU63jDSYdpfpHTfxfHa8h4fD_nbMig8CeIi_9I3X-KpvRhI2yKdBV7SQZvye5-LlWeUmKzGyTNMtZKhikZyK1-cPYRHKDyhzcWZWOD2NJgMAfPXt2_nUDZxMlCbP2aQ8TNdADGcMsXiVuhGr5psqJszs5CjfKgViFVZivlpbaJla3Bz1VnRWCO5fN22lWH9tWvHbld8L1eJWMsmMYEhN75fM9xYoxzwjHJ64Nv6ok9YsHQYctmq_Wuy08rbIouPXJ8fJlkuShBOrjoW-Ll8E6OmXeG8CMWiC-Hbz8JXZWf3X2hJn_ZyaggKPOp8YVjioVIV76hb2abDSEKcDUFmZU-q0SO2U22Qiz_3Rwntpcptw4JtJrkls_iIaoyiIBSI2C2DyF36tzt_Fx1w\",\"OS\":\"Windows\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.examly.io/api/users/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"examly",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.examly.io/api/users/login' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'content-type: application/json' \\\r\n  -H 'origin: https://admin.learn.futurense.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://admin.learn.futurense.com/' \\\r\n  -H 'sec-ch-ua: \"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"email\":\"elon@iamneo.ai\",\"password\":\"LPvVaskp2PYwUZd\",\"school_code\":\"futurense299\",\"googleToken\":\"03AFcWeA6MNXxz-IF1sccjNfoqu2dTxrHOoe1ykUaQiC9SxYMM3RuIgjQRzSvGniAxNSe3iIB49lVBXXud127jcva1exlJVJPgcNxK3VKu7v-MvBm7RXcKsFbfJABaWyMPVcZKC4Geg6re4zNz4_XKp2x1ziK2msxtiOKsB_3Y-uKZtoX2dT6Q5bKCTTwW8oxEPOf55fM7MRGHO5TuGrqzBz4AepwCfsUeT_OynzhfGxrdIlu2hC6Y2zb7A6OzPBTTbEoMPAoqgnteoiAFkruYl70hyVZdvLeVZGUtdHrriRW-91j3UXKtBPvKJ_aA3UYF2lY3cz-nr4sXzeQk1CKi6_xcbobKOyf2iUXW1dIvhMLiv_S5ZiFpTwpNka2sucgthbKdpjvw34e3_5eNnS1iJXtVw9x7_5lGlzNBov3IuCjSgoR4l9-kRkFhZs2Dtes1yejuh1uwZWv8oDUgblteHFwV1VKKZ-5n-8dbX-jMJ7aSu_ZB2b9jS5DEzsY1wpsvgFZJ_VZ6lcmcQv98bl2WWw8D-o1tuYE8JzOP_04tQU63jDSYdpfpHTfxfHa8h4fD_nbMig8CeIi_9I3X-KpvRhI2yKdBV7SQZvye5-LlWeUmKzGyTNMtZKhikZyK1-cPYRHKDyhzcWZWOD2NJgMAfPXt2_nUDZxMlCbP2aQ8TNdADGcMsXiVuhGr5psqJszs5CjfKgViFVZivlpbaJla3Bz1VnRWCO5fN22lWH9tWvHbld8L1eJWMsmMYEhN75fM9xYoxzwjHJ64Nv6ok9YsHQYctmq_Wuy08rbIouPXJ8fJlkuShBOrjoW-Ll8E6OmXeG8CMWiC-Hbz8JXZWf3X2hJn_ZyaggKPOp8YVjioVIV76hb2abDSEKcDUFmZU-q0SO2U22Qiz_3Rwntpcptw4JtJrkls_iIaoyiIBSI2C2DyF36tzt_Fx1w\",\"OS\":\"Windows\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "questionbanks API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vyc19kb21haW5faWQiOjIxMDA2ODIsInVzZXJfaWQiOiI1N2E3ZTMxYi1hMWNhLTQyNGUtYjQ1YS1kNTMxYjlmMGFlZTgiLCJzY2hvb2xfaWQiOiI5OTQ0OWM1Zi0wZWU1LTQyMTEtYTMyNi03ODgxY2I5ZTQzODciLCJlbWFpbCI6ImVsb25AaWFtbmVvLmFpIiwiZW1haWxfdmVyaWZpZWQiOjEsIm5hbWUiOiJTdXBlciRBZG1pbiIsInBob25lIjoiMTIzNDU2Nzg5MCIsInBob25lX3ZlcmlmaWVkIjowLCJwcm9maWxlX3BpYyI6bnVsbCwiZ2VuZGVyIjoiTWFsZSIsInJvbGxfbm8iOm51bGwsInBvcnRhbF9hY2Nlc3Nfc3RhdHVzIjpudWxsLCJlbWFpbF9yZXF1ZXN0ZWRfaGlzdG9yeSI6bnVsbCwiZW1haWxfcmVxdWVzdGVkIjpudWxsLCJwcmltYXJ5X2VtYWlsIjoiZWxvbkBpYW1uZW8uYWkiLCJwYXJlbnRfY29udGFjdCI6bnVsbCwicGhvbmVfbnVtYmVyIjpudWxsLCJpc19mb2xsb3dpbmdfcHVibGljX2ZlZWQiOmZhbHNlLCJiYWRnZSI6MCwic3VwZXJiYWRnZSI6MCwiY29uc3VtZWRfYmFkZ2UiOjAsImNvbnN1bWVkX3N1cGVyYmFkZ2UiOjAsIm1hbm51YWxiYWRnZXMiOm51bGwsInN0YXR1cyI6Ikludml0ZWQiLCJkb2IiOm51bGwsInN0YWZmX3R5cGUiOiJJbnRlcm5hbCIsInZlcmlmaWVkX3BpYyI6bnVsbCwiYXBwbGljYXRpb25fbm8iOm51bGwsImhhc2hfaWQiOiIyYzdjMWE3YTVjZDgxYzRjMzdmZGYxODQ4Y2YwNWQxMzY1MDMxNTM3IiwicmVzZXRfcGFzc3dvcmQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTEyLTE2VDExOjM1OjQzLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTA4VDA5OjQ2OjU2LjAwMFoiLCJkZWxldGVkQXQiOm51bGwsInJlZGlzUm9sZSI6ImFkbWluIiwic2Vzc2lvbklEIjoiNld6QS9zYmoxT0JrL2NPeE16RittQT09IiwiZW5hYmxlVHdvRmFjdG9yQXV0aGVudGljYXRpb24iOmZhbHNlLCJpYXQiOjE3NDA5OTIzNTUsImV4cCI6MTc0MTAzNTU1NX0.vHwR1QHWCuMbrJI_t7iVlJyuNJZWtQcETHZBjp5W9So"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://admin.learn.futurense.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://admin.learn.futurense.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"branch_id\":\"all\",\"page\":1,\"limit\":25,\"visibility\":\"All\",\"department_id\":[\"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\"c4ccb00d-7821-4079-8ac0-322cca8e728d\",\"f4027a87-bc0c-4733-adde-ff05406e7718\",\"53e0433c-4f8b-448a-96fe-e92df5c9ab04\",\"961a1f7a-5629-4171-b26a-ed0584c9991f\",\"b1878957-08f1-49d0-b4c6-d23138ad5a2e\",\"831a53ae-9859-4534-b524-1fbec521af42\",\"4e36fd98-9ecc-4851-ac2d-291765aa1d17\",\"8cc0cd05-8df9-4a50-ad66-1bcb3fbfaf2f\",\"7b90ba87-aea6-4ecf-ae89-e4e18807fc73\",\"af952086-0c94-4c06-887e-043ffa185dd6\",\"66a18871-0b69-4f5d-a9e1-e24eb396fbd7\",\"758b9416-7595-4ff8-aa62-4e4ac915d96c\",\"d535a0c6-346b-4760-91fc-6e558e651caa\",\"201dc947-e4d5-4b31-996b-e303b74a687f\",\"5f7b452e-92e2-4515-86e6-804a88e7f72e\",\"9ace8441-978c-4ceb-8f79-937e52bbb1f2\",\"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\",\"7f04aee2-08e5-4730-8df6-eba4e6943957\",\"f398411f-0e4f-4401-a3f1-146a18b8db13\",\"f40bcd18-797e-4a39-a4a7-08fb6d51cf9d\",\"07783963-7062-4719-b24f-d2e1b60e8f4a\",\"d8d03646-d868-45f1-8a7c-4f50db610688\",\"ba873e6c-a84e-487e-91cc-9d98edb1911d\",\"1fb07e7c-5b39-4e85-a5f7-2d22500ce20a\",\"b7112e0c-0f01-4725-a879-0fe116f6c39b\",\"2c284246-eb61-4a11-8cd8-c0fc590ab040\",\"de4985c8-8394-439f-9693-133d71b9ece9\",\"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\"e91413c3-ecab-473a-9f9a-a442f9d8adb7\",\"d72daf5d-45c7-4092-ad46-52e34777ccc2\",\"55d046f5-8bf1-419f-ba19-76da9c317aa4\",\"6b42a947-347b-45d3-8d3b-d625c4389e5e\",\"8de210d8-f6a5-411c-ba01-f8523a4c10d0\",\"605495ca-f27f-4974-9427-432d164023dc\",\"300415d9-38fc-4956-900d-c4fbe60e1879\",\"ebe2fa19-ff85-4228-81d0-2c1b26b43349\",\"eee56123-b108-4b5b-b952-4c3cbe0862d5\",\"fb72fd3d-8a6a-4868-b4e5-fa84887fb548\",\"788e2577-baad-487f-a58d-24a75d2c372c\",\"adffa680-167c-4b98-9bc3-9c515ce1ddf3\",\"dea498dd-07af-468f-b227-ab937c0b3567\",\"871aec33-08c2-4210-a7d0-39ef8490d1b2\",\"89eb2497-c26f-41d8-b477-580f3f91d3a7\",\"4e4909f0-f173-4b5b-a9f9-d74d0564af9e\",\"9ef9cfcc-535e-4105-9b5c-d8bc841f77dc\",\"e30519a5-e6c9-4d5e-be61-ffb4261cbeba\",\"2a19e0ac-5a6d-4f1d-8786-bbb3b8025ad8\",\"f4c7c8c5-9355-4911-8b72-1f35a590f6a2\",\"c6b789f4-92c5-4e03-ad20-ea48480b92e3\",\"0c0fb3ee-2e82-41ce-ba9d-ef24bdd85120\",\"e8ab2c4d-6c70-401a-8562-c1fafd56c30b\",\"bd69e503-188b-4075-9d0c-19c75da7b04a\",\"06e5e8a6-f09f-48b2-87c3-e4ba66e30bb8\",\"17e7c6cf-b8ca-4b23-80f0-d1cd5fc26bc3\",\"fd7d7eef-d7fa-48e1-bd45-a69aa5fcc829\",\"94887034-28b6-4f52-bc41-49170ca51630\",\"1de61649-1b14-466c-ac05-76a97a350d7b\",\"bbeb087d-965d-42a5-8295-a97d467ff74c\",\"10466803-f72f-4da4-8e82-2999f67a31d5\",\"1d07c123-c1aa-42c7-a018-99321259dbcc\",\"42e6c6af-a9ba-461e-9956-65450f016e90\",\"1147f069-9089-41ea-a768-ef8c01711496\",\"1ff76622-0663-46cf-b899-b5b6216f639e\",\"94e12d31-d3d7-4f5a-855c-6dde244bf04d\",\"b5ba577e-4a0b-4e86-a1da-f22c30d88ba5\",\"dc4a9733-2821-4d48-85ed-ec1939f2e2c6\",\"0e7b3174-4907-4186-a3ff-0e67ed32df46\",\"adc68c95-c4f6-4cde-ae2d-70e454a7d1a2\",\"fe3ee3aa-827b-4494-a0e7-d47979769c70\",\"d593456e-2f5b-4b7c-942c-2fa892f839d3\",\"46906a22-3162-4233-9460-65b6d8eaf438\",\"26d11fab-e002-4030-a167-aa807cb3e397\",\"e433de54-3f67-4469-9945-dd63f519e003\",\"ee0ef0d0-4890-4840-ab35-3b7eb8c76c05\",\"eefbc131-4bf5-46a8-aea2-a541e8e65876\",\"b6fdfa85-d016-4dd9-b5a4-e232b958deb6\",\"18c022ca-3e2f-4356-8bdc-51f75d0eebe9\",\"f86209f2-490e-46cc-8b45-93c15c823454\",\"02548e4f-e44e-4fde-943b-9c39e44ab389\",\"8a775233-8a7e-49aa-bcad-38c06d1d2e95\",\"9e456336-819c-4d7f-b30e-50cb161d6e78\",\"8d70276e-f0c9-406f-9c91-11314b1c6664\",\"dfbb3a46-166b-4fd8-87ac-f438df68e6c9\",\"cff54c64-a001-454c-b349-b1d40b10e325\",\"bbf09855-4da4-4527-b6a4-b14635ae3160\",\"31e8d995-f945-4295-8c60-6dba95ec7b5e\",\"d39e5b28-c13d-4257-a82c-1b79591936ce\",\"79f74e4d-0ff7-4eb7-acea-f17ca586da7a\",\"f59a6a25-73a8-448f-93b4-8d8b210f64be\",\"42979c1e-d741-4f8f-be57-9f7c2941e2a3\",\"f3a9d489-00ef-453e-94b9-aaaad982d923\",\"694c83d4-82db-40e9-a0e5-622f375acc3e\",\"e4ad3e95-a8e0-48ce-99ab-93e1ce302e62\",\"f4347afb-1db7-4ce9-8f58-3528ef0e64e2\",\"659a29e8-1997-4098-bf5a-4e7f2ef03a04\",\"ef658106-a71a-4ccf-aaef-6d6cb0c6fafe\",\"dcac7855-6325-45c6-b6d9-858a73695ae0\",\"53db17d1-5519-406b-ad53-a1abb25e86eb\",\"ee6e8af0-cf60-421e-9f30-b8338ab64296\",\"470fba3f-9978-44a9-bf83-e87269b869e7\",\"c7532205-547c-4e19-9e8d-77191eee68f3\",\"15ba3170-ca10-4f81-9764-9036d4b86bac\",\"6e76c47a-9027-4739-851a-d6e79b78a44a\",\"6e3288ba-1474-4586-accc-079cf728c0f0\",\"4deb3fc6-911a-4718-8001-ff223bf6bf6b\",\"1013574a-8cfc-4468-839a-c205e0f540a2\",\"a1eee473-3c61-4a2b-b412-2f8ecca647e9\",\"7be0b80b-c373-469e-839a-420081fdcaa8\",\"cc445440-9d64-441d-8ddd-42373852d01f\",\"826b6017-79cf-4b7a-8f17-643d15e5a59c\",\"718263a0-76dc-4d87-91bd-0f85ececd3da\",\"65aac230-5497-4008-b6f2-f084c0fee9f5\",\"f0ff07cd-cda6-456c-9037-20272cb7e247\",\"ced1915b-47ba-4b66-a55c-a334b7e8acbd\",\"0a6cc494-b961-466a-8fb8-59a08a32a7d5\",\"c0c906a5-7be4-4c74-a06c-7db9aec7a94e\"],\"mainDepartmentUser\":true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.examly.io/api/v2/questionbanks",
+					"protocol": "https",
+					"host": [
+						"api",
+						"examly",
+						"io"
+					],
+					"path": [
+						"api",
+						"v2",
+						"questionbanks"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.examly.io/api/v2/questionbanks' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vyc19kb21haW5faWQiOjIxMDA2ODIsInVzZXJfaWQiOiI1N2E3ZTMxYi1hMWNhLTQyNGUtYjQ1YS1kNTMxYjlmMGFlZTgiLCJzY2hvb2xfaWQiOiI5OTQ0OWM1Zi0wZWU1LTQyMTEtYTMyNi03ODgxY2I5ZTQzODciLCJlbWFpbCI6ImVsb25AaWFtbmVvLmFpIiwiZW1haWxfdmVyaWZpZWQiOjEsIm5hbWUiOiJTdXBlciRBZG1pbiIsInBob25lIjoiMTIzNDU2Nzg5MCIsInBob25lX3ZlcmlmaWVkIjowLCJwcm9maWxlX3BpYyI6bnVsbCwiZ2VuZGVyIjoiTWFsZSIsInJvbGxfbm8iOm51bGwsInBvcnRhbF9hY2Nlc3Nfc3RhdHVzIjpudWxsLCJlbWFpbF9yZXF1ZXN0ZWRfaGlzdG9yeSI6bnVsbCwiZW1haWxfcmVxdWVzdGVkIjpudWxsLCJwcmltYXJ5X2VtYWlsIjoiZWxvbkBpYW1uZW8uYWkiLCJwYXJlbnRfY29udGFjdCI6bnVsbCwicGhvbmVfbnVtYmVyIjpudWxsLCJpc19mb2xsb3dpbmdfcHVibGljX2ZlZWQiOmZhbHNlLCJiYWRnZSI6MCwic3VwZXJiYWRnZSI6MCwiY29uc3VtZWRfYmFkZ2UiOjAsImNvbnN1bWVkX3N1cGVyYmFkZ2UiOjAsIm1hbm51YWxiYWRnZXMiOm51bGwsInN0YXR1cyI6Ikludml0ZWQiLCJkb2IiOm51bGwsInN0YWZmX3R5cGUiOiJJbnRlcm5hbCIsInZlcmlmaWVkX3BpYyI6bnVsbCwiYXBwbGljYXRpb25fbm8iOm51bGwsImhhc2hfaWQiOiIyYzdjMWE3YTVjZDgxYzRjMzdmZGYxODQ4Y2YwNWQxMzY1MDMxNTM3IiwicmVzZXRfcGFzc3dvcmQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTEyLTE2VDExOjM1OjQzLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTA4VDA5OjQ2OjU2LjAwMFoiLCJkZWxldGVkQXQiOm51bGwsInJlZGlzUm9sZSI6ImFkbWluIiwic2Vzc2lvbklEIjoiNld6QS9zYmoxT0JrL2NPeE16RittQT09IiwiZW5hYmxlVHdvRmFjdG9yQXV0aGVudGljYXRpb24iOmZhbHNlLCJpYXQiOjE3NDA5OTIzNTUsImV4cCI6MTc0MTAzNTU1NX0.vHwR1QHWCuMbrJI_t7iVlJyuNJZWtQcETHZBjp5W9So' \\\r\n  -H 'content-type: application/json' \\\r\n  -H 'origin: https://admin.learn.futurense.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://admin.learn.futurense.com/' \\\r\n  -H 'sec-ch-ua: \"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"branch_id\":\"all\",\"page\":1,\"limit\":25,\"visibility\":\"All\",\"department_id\":[\"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\"c4ccb00d-7821-4079-8ac0-322cca8e728d\",\"f4027a87-bc0c-4733-adde-ff05406e7718\",\"53e0433c-4f8b-448a-96fe-e92df5c9ab04\",\"961a1f7a-5629-4171-b26a-ed0584c9991f\",\"b1878957-08f1-49d0-b4c6-d23138ad5a2e\",\"831a53ae-9859-4534-b524-1fbec521af42\",\"4e36fd98-9ecc-4851-ac2d-291765aa1d17\",\"8cc0cd05-8df9-4a50-ad66-1bcb3fbfaf2f\",\"7b90ba87-aea6-4ecf-ae89-e4e18807fc73\",\"af952086-0c94-4c06-887e-043ffa185dd6\",\"66a18871-0b69-4f5d-a9e1-e24eb396fbd7\",\"758b9416-7595-4ff8-aa62-4e4ac915d96c\",\"d535a0c6-346b-4760-91fc-6e558e651caa\",\"201dc947-e4d5-4b31-996b-e303b74a687f\",\"5f7b452e-92e2-4515-86e6-804a88e7f72e\",\"9ace8441-978c-4ceb-8f79-937e52bbb1f2\",\"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\",\"7f04aee2-08e5-4730-8df6-eba4e6943957\",\"f398411f-0e4f-4401-a3f1-146a18b8db13\",\"f40bcd18-797e-4a39-a4a7-08fb6d51cf9d\",\"07783963-7062-4719-b24f-d2e1b60e8f4a\",\"d8d03646-d868-45f1-8a7c-4f50db610688\",\"ba873e6c-a84e-487e-91cc-9d98edb1911d\",\"1fb07e7c-5b39-4e85-a5f7-2d22500ce20a\",\"b7112e0c-0f01-4725-a879-0fe116f6c39b\",\"2c284246-eb61-4a11-8cd8-c0fc590ab040\",\"de4985c8-8394-439f-9693-133d71b9ece9\",\"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\"e91413c3-ecab-473a-9f9a-a442f9d8adb7\",\"d72daf5d-45c7-4092-ad46-52e34777ccc2\",\"55d046f5-8bf1-419f-ba19-76da9c317aa4\",\"6b42a947-347b-45d3-8d3b-d625c4389e5e\",\"8de210d8-f6a5-411c-ba01-f8523a4c10d0\",\"605495ca-f27f-4974-9427-432d164023dc\",\"300415d9-38fc-4956-900d-c4fbe60e1879\",\"ebe2fa19-ff85-4228-81d0-2c1b26b43349\",\"eee56123-b108-4b5b-b952-4c3cbe0862d5\",\"fb72fd3d-8a6a-4868-b4e5-fa84887fb548\",\"788e2577-baad-487f-a58d-24a75d2c372c\",\"adffa680-167c-4b98-9bc3-9c515ce1ddf3\",\"dea498dd-07af-468f-b227-ab937c0b3567\",\"871aec33-08c2-4210-a7d0-39ef8490d1b2\",\"89eb2497-c26f-41d8-b477-580f3f91d3a7\",\"4e4909f0-f173-4b5b-a9f9-d74d0564af9e\",\"9ef9cfcc-535e-4105-9b5c-d8bc841f77dc\",\"e30519a5-e6c9-4d5e-be61-ffb4261cbeba\",\"2a19e0ac-5a6d-4f1d-8786-bbb3b8025ad8\",\"f4c7c8c5-9355-4911-8b72-1f35a590f6a2\",\"c6b789f4-92c5-4e03-ad20-ea48480b92e3\",\"0c0fb3ee-2e82-41ce-ba9d-ef24bdd85120\",\"e8ab2c4d-6c70-401a-8562-c1fafd56c30b\",\"bd69e503-188b-4075-9d0c-19c75da7b04a\",\"06e5e8a6-f09f-48b2-87c3-e4ba66e30bb8\",\"17e7c6cf-b8ca-4b23-80f0-d1cd5fc26bc3\",\"fd7d7eef-d7fa-48e1-bd45-a69aa5fcc829\",\"94887034-28b6-4f52-bc41-49170ca51630\",\"1de61649-1b14-466c-ac05-76a97a350d7b\",\"bbeb087d-965d-42a5-8295-a97d467ff74c\",\"10466803-f72f-4da4-8e82-2999f67a31d5\",\"1d07c123-c1aa-42c7-a018-99321259dbcc\",\"42e6c6af-a9ba-461e-9956-65450f016e90\",\"1147f069-9089-41ea-a768-ef8c01711496\",\"1ff76622-0663-46cf-b899-b5b6216f639e\",\"94e12d31-d3d7-4f5a-855c-6dde244bf04d\",\"b5ba577e-4a0b-4e86-a1da-f22c30d88ba5\",\"dc4a9733-2821-4d48-85ed-ec1939f2e2c6\",\"0e7b3174-4907-4186-a3ff-0e67ed32df46\",\"adc68c95-c4f6-4cde-ae2d-70e454a7d1a2\",\"fe3ee3aa-827b-4494-a0e7-d47979769c70\",\"d593456e-2f5b-4b7c-942c-2fa892f839d3\",\"46906a22-3162-4233-9460-65b6d8eaf438\",\"26d11fab-e002-4030-a167-aa807cb3e397\",\"e433de54-3f67-4469-9945-dd63f519e003\",\"ee0ef0d0-4890-4840-ab35-3b7eb8c76c05\",\"eefbc131-4bf5-46a8-aea2-a541e8e65876\",\"b6fdfa85-d016-4dd9-b5a4-e232b958deb6\",\"18c022ca-3e2f-4356-8bdc-51f75d0eebe9\",\"f86209f2-490e-46cc-8b45-93c15c823454\",\"02548e4f-e44e-4fde-943b-9c39e44ab389\",\"8a775233-8a7e-49aa-bcad-38c06d1d2e95\",\"9e456336-819c-4d7f-b30e-50cb161d6e78\",\"8d70276e-f0c9-406f-9c91-11314b1c6664\",\"dfbb3a46-166b-4fd8-87ac-f438df68e6c9\",\"cff54c64-a001-454c-b349-b1d40b10e325\",\"bbf09855-4da4-4527-b6a4-b14635ae3160\",\"31e8d995-f945-4295-8c60-6dba95ec7b5e\",\"d39e5b28-c13d-4257-a82c-1b79591936ce\",\"79f74e4d-0ff7-4eb7-acea-f17ca586da7a\",\"f59a6a25-73a8-448f-93b4-8d8b210f64be\",\"42979c1e-d741-4f8f-be57-9f7c2941e2a3\",\"f3a9d489-00ef-453e-94b9-aaaad982d923\",\"694c83d4-82db-40e9-a0e5-622f375acc3e\",\"e4ad3e95-a8e0-48ce-99ab-93e1ce302e62\",\"f4347afb-1db7-4ce9-8f58-3528ef0e64e2\",\"659a29e8-1997-4098-bf5a-4e7f2ef03a04\",\"ef658106-a71a-4ccf-aaef-6d6cb0c6fafe\",\"dcac7855-6325-45c6-b6d9-858a73695ae0\",\"53db17d1-5519-406b-ad53-a1abb25e86eb\",\"ee6e8af0-cf60-421e-9f30-b8338ab64296\",\"470fba3f-9978-44a9-bf83-e87269b869e7\",\"c7532205-547c-4e19-9e8d-77191eee68f3\",\"15ba3170-ca10-4f81-9764-9036d4b86bac\",\"6e76c47a-9027-4739-851a-d6e79b78a44a\",\"6e3288ba-1474-4586-accc-079cf728c0f0\",\"4deb3fc6-911a-4718-8001-ff223bf6bf6b\",\"1013574a-8cfc-4468-839a-c205e0f540a2\",\"a1eee473-3c61-4a2b-b412-2f8ecca647e9\",\"7be0b80b-c373-469e-839a-420081fdcaa8\",\"cc445440-9d64-441d-8ddd-42373852d01f\",\"826b6017-79cf-4b7a-8f17-643d15e5a59c\",\"718263a0-76dc-4d87-91bd-0f85ececd3da\",\"65aac230-5497-4008-b6f2-f084c0fee9f5\",\"f0ff07cd-cda6-456c-9037-20272cb7e247\",\"ced1915b-47ba-4b66-a55c-a334b7e8acbd\",\"0a6cc494-b961-466a-8fb8-59a08a32a7d5\",\"c0c906a5-7be4-4c74-a06c-7db9aec7a94e\"],\"mainDepartmentUser\":true}'"
+			},
+			"response": [
+				{
+					"name": "questionbanks API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vyc19kb21haW5faWQiOjIxMDA2ODIsInVzZXJfaWQiOiI1N2E3ZTMxYi1hMWNhLTQyNGUtYjQ1YS1kNTMxYjlmMGFlZTgiLCJzY2hvb2xfaWQiOiI5OTQ0OWM1Zi0wZWU1LTQyMTEtYTMyNi03ODgxY2I5ZTQzODciLCJlbWFpbCI6ImVsb25AaWFtbmVvLmFpIiwiZW1haWxfdmVyaWZpZWQiOjEsIm5hbWUiOiJTdXBlciRBZG1pbiIsInBob25lIjoiMTIzNDU2Nzg5MCIsInBob25lX3ZlcmlmaWVkIjowLCJwcm9maWxlX3BpYyI6bnVsbCwiZ2VuZGVyIjoiTWFsZSIsInJvbGxfbm8iOm51bGwsInBvcnRhbF9hY2Nlc3Nfc3RhdHVzIjpudWxsLCJlbWFpbF9yZXF1ZXN0ZWRfaGlzdG9yeSI6bnVsbCwiZW1haWxfcmVxdWVzdGVkIjpudWxsLCJwcmltYXJ5X2VtYWlsIjoiZWxvbkBpYW1uZW8uYWkiLCJwYXJlbnRfY29udGFjdCI6bnVsbCwicGhvbmVfbnVtYmVyIjpudWxsLCJpc19mb2xsb3dpbmdfcHVibGljX2ZlZWQiOmZhbHNlLCJiYWRnZSI6MCwic3VwZXJiYWRnZSI6MCwiY29uc3VtZWRfYmFkZ2UiOjAsImNvbnN1bWVkX3N1cGVyYmFkZ2UiOjAsIm1hbm51YWxiYWRnZXMiOm51bGwsInN0YXR1cyI6Ikludml0ZWQiLCJkb2IiOm51bGwsInN0YWZmX3R5cGUiOiJJbnRlcm5hbCIsInZlcmlmaWVkX3BpYyI6bnVsbCwiYXBwbGljYXRpb25fbm8iOm51bGwsImhhc2hfaWQiOiIyYzdjMWE3YTVjZDgxYzRjMzdmZGYxODQ4Y2YwNWQxMzY1MDMxNTM3IiwicmVzZXRfcGFzc3dvcmQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTEyLTE2VDExOjM1OjQzLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTA4VDA5OjQ2OjU2LjAwMFoiLCJkZWxldGVkQXQiOm51bGwsInJlZGlzUm9sZSI6ImFkbWluIiwic2Vzc2lvbklEIjoiNld6QS9zYmoxT0JrL2NPeE16RittQT09IiwiZW5hYmxlVHdvRmFjdG9yQXV0aGVudGljYXRpb24iOmZhbHNlLCJpYXQiOjE3NDA5OTIzNTUsImV4cCI6MTc0MTAzNTU1NX0.vHwR1QHWCuMbrJI_t7iVlJyuNJZWtQcETHZBjp5W9So"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://admin.learn.futurense.com"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://admin.learn.futurense.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "cross-site"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"branch_id\":\"all\",\"page\":1,\"limit\":25,\"visibility\":\"All\",\"department_id\":[\"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\"c4ccb00d-7821-4079-8ac0-322cca8e728d\",\"f4027a87-bc0c-4733-adde-ff05406e7718\",\"53e0433c-4f8b-448a-96fe-e92df5c9ab04\",\"961a1f7a-5629-4171-b26a-ed0584c9991f\",\"b1878957-08f1-49d0-b4c6-d23138ad5a2e\",\"831a53ae-9859-4534-b524-1fbec521af42\",\"4e36fd98-9ecc-4851-ac2d-291765aa1d17\",\"8cc0cd05-8df9-4a50-ad66-1bcb3fbfaf2f\",\"7b90ba87-aea6-4ecf-ae89-e4e18807fc73\",\"af952086-0c94-4c06-887e-043ffa185dd6\",\"66a18871-0b69-4f5d-a9e1-e24eb396fbd7\",\"758b9416-7595-4ff8-aa62-4e4ac915d96c\",\"d535a0c6-346b-4760-91fc-6e558e651caa\",\"201dc947-e4d5-4b31-996b-e303b74a687f\",\"5f7b452e-92e2-4515-86e6-804a88e7f72e\",\"9ace8441-978c-4ceb-8f79-937e52bbb1f2\",\"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\",\"7f04aee2-08e5-4730-8df6-eba4e6943957\",\"f398411f-0e4f-4401-a3f1-146a18b8db13\",\"f40bcd18-797e-4a39-a4a7-08fb6d51cf9d\",\"07783963-7062-4719-b24f-d2e1b60e8f4a\",\"d8d03646-d868-45f1-8a7c-4f50db610688\",\"ba873e6c-a84e-487e-91cc-9d98edb1911d\",\"1fb07e7c-5b39-4e85-a5f7-2d22500ce20a\",\"b7112e0c-0f01-4725-a879-0fe116f6c39b\",\"2c284246-eb61-4a11-8cd8-c0fc590ab040\",\"de4985c8-8394-439f-9693-133d71b9ece9\",\"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\"e91413c3-ecab-473a-9f9a-a442f9d8adb7\",\"d72daf5d-45c7-4092-ad46-52e34777ccc2\",\"55d046f5-8bf1-419f-ba19-76da9c317aa4\",\"6b42a947-347b-45d3-8d3b-d625c4389e5e\",\"8de210d8-f6a5-411c-ba01-f8523a4c10d0\",\"605495ca-f27f-4974-9427-432d164023dc\",\"300415d9-38fc-4956-900d-c4fbe60e1879\",\"ebe2fa19-ff85-4228-81d0-2c1b26b43349\",\"eee56123-b108-4b5b-b952-4c3cbe0862d5\",\"fb72fd3d-8a6a-4868-b4e5-fa84887fb548\",\"788e2577-baad-487f-a58d-24a75d2c372c\",\"adffa680-167c-4b98-9bc3-9c515ce1ddf3\",\"dea498dd-07af-468f-b227-ab937c0b3567\",\"871aec33-08c2-4210-a7d0-39ef8490d1b2\",\"89eb2497-c26f-41d8-b477-580f3f91d3a7\",\"4e4909f0-f173-4b5b-a9f9-d74d0564af9e\",\"9ef9cfcc-535e-4105-9b5c-d8bc841f77dc\",\"e30519a5-e6c9-4d5e-be61-ffb4261cbeba\",\"2a19e0ac-5a6d-4f1d-8786-bbb3b8025ad8\",\"f4c7c8c5-9355-4911-8b72-1f35a590f6a2\",\"c6b789f4-92c5-4e03-ad20-ea48480b92e3\",\"0c0fb3ee-2e82-41ce-ba9d-ef24bdd85120\",\"e8ab2c4d-6c70-401a-8562-c1fafd56c30b\",\"bd69e503-188b-4075-9d0c-19c75da7b04a\",\"06e5e8a6-f09f-48b2-87c3-e4ba66e30bb8\",\"17e7c6cf-b8ca-4b23-80f0-d1cd5fc26bc3\",\"fd7d7eef-d7fa-48e1-bd45-a69aa5fcc829\",\"94887034-28b6-4f52-bc41-49170ca51630\",\"1de61649-1b14-466c-ac05-76a97a350d7b\",\"bbeb087d-965d-42a5-8295-a97d467ff74c\",\"10466803-f72f-4da4-8e82-2999f67a31d5\",\"1d07c123-c1aa-42c7-a018-99321259dbcc\",\"42e6c6af-a9ba-461e-9956-65450f016e90\",\"1147f069-9089-41ea-a768-ef8c01711496\",\"1ff76622-0663-46cf-b899-b5b6216f639e\",\"94e12d31-d3d7-4f5a-855c-6dde244bf04d\",\"b5ba577e-4a0b-4e86-a1da-f22c30d88ba5\",\"dc4a9733-2821-4d48-85ed-ec1939f2e2c6\",\"0e7b3174-4907-4186-a3ff-0e67ed32df46\",\"adc68c95-c4f6-4cde-ae2d-70e454a7d1a2\",\"fe3ee3aa-827b-4494-a0e7-d47979769c70\",\"d593456e-2f5b-4b7c-942c-2fa892f839d3\",\"46906a22-3162-4233-9460-65b6d8eaf438\",\"26d11fab-e002-4030-a167-aa807cb3e397\",\"e433de54-3f67-4469-9945-dd63f519e003\",\"ee0ef0d0-4890-4840-ab35-3b7eb8c76c05\",\"eefbc131-4bf5-46a8-aea2-a541e8e65876\",\"b6fdfa85-d016-4dd9-b5a4-e232b958deb6\",\"18c022ca-3e2f-4356-8bdc-51f75d0eebe9\",\"f86209f2-490e-46cc-8b45-93c15c823454\",\"02548e4f-e44e-4fde-943b-9c39e44ab389\",\"8a775233-8a7e-49aa-bcad-38c06d1d2e95\",\"9e456336-819c-4d7f-b30e-50cb161d6e78\",\"8d70276e-f0c9-406f-9c91-11314b1c6664\",\"dfbb3a46-166b-4fd8-87ac-f438df68e6c9\",\"cff54c64-a001-454c-b349-b1d40b10e325\",\"bbf09855-4da4-4527-b6a4-b14635ae3160\",\"31e8d995-f945-4295-8c60-6dba95ec7b5e\",\"d39e5b28-c13d-4257-a82c-1b79591936ce\",\"79f74e4d-0ff7-4eb7-acea-f17ca586da7a\",\"f59a6a25-73a8-448f-93b4-8d8b210f64be\",\"42979c1e-d741-4f8f-be57-9f7c2941e2a3\",\"f3a9d489-00ef-453e-94b9-aaaad982d923\",\"694c83d4-82db-40e9-a0e5-622f375acc3e\",\"e4ad3e95-a8e0-48ce-99ab-93e1ce302e62\",\"f4347afb-1db7-4ce9-8f58-3528ef0e64e2\",\"659a29e8-1997-4098-bf5a-4e7f2ef03a04\",\"ef658106-a71a-4ccf-aaef-6d6cb0c6fafe\",\"dcac7855-6325-45c6-b6d9-858a73695ae0\",\"53db17d1-5519-406b-ad53-a1abb25e86eb\",\"ee6e8af0-cf60-421e-9f30-b8338ab64296\",\"470fba3f-9978-44a9-bf83-e87269b869e7\",\"c7532205-547c-4e19-9e8d-77191eee68f3\",\"15ba3170-ca10-4f81-9764-9036d4b86bac\",\"6e76c47a-9027-4739-851a-d6e79b78a44a\",\"6e3288ba-1474-4586-accc-079cf728c0f0\",\"4deb3fc6-911a-4718-8001-ff223bf6bf6b\",\"1013574a-8cfc-4468-839a-c205e0f540a2\",\"a1eee473-3c61-4a2b-b412-2f8ecca647e9\",\"7be0b80b-c373-469e-839a-420081fdcaa8\",\"cc445440-9d64-441d-8ddd-42373852d01f\",\"826b6017-79cf-4b7a-8f17-643d15e5a59c\",\"718263a0-76dc-4d87-91bd-0f85ececd3da\",\"65aac230-5497-4008-b6f2-f084c0fee9f5\",\"f0ff07cd-cda6-456c-9037-20272cb7e247\",\"ced1915b-47ba-4b66-a55c-a334b7e8acbd\",\"0a6cc494-b961-466a-8fb8-59a08a32a7d5\",\"c0c906a5-7be4-4c74-a06c-7db9aec7a94e\"],\"mainDepartmentUser\":true}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.examly.io/api/v2/questionbanks",
+							"protocol": "https",
+							"host": [
+								"api",
+								"examly",
+								"io"
+							],
+							"path": [
+								"api",
+								"v2",
+								"questionbanks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Mar 2025 09:07:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "origin,accept-encoding"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "https://admin.learn.futurense.com"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=15768000"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 google"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"results\": {\n        \"count\": 2364,\n        \"questionbanks\": [\n            {\n                \"qb_id\": \"e6d899ba-4539-441e-9b4f-53a2965391d5\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \" FFL25_Week-3_Assessment_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"VISMITA AS\",\n                \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"e6d899ba-4539-441e-9b4f-53a2965391d5\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense Cohort 25 Batch 1 - admin\",\n                                \"value\": \"18c022ca-3e2f-4356-8bdc-51f75d0eebe9\",\n                                \"branch_id\": \"27273ea7-57f4-46dd-849d-0360720a4197\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"18c022ca-3e2f-4356-8bdc-51f75d0eebe9\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \" FFL25_Week-3_Assessment_MCQ\",\n                        \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"createdAt\": \"2023-08-31T10:30:43.461Z\",\n                        \"createdBy\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-08-31T10:30:43.000Z\",\n                \"updatedAt\": \"2023-08-31T10:30:43.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"e6d899ba-4539-441e-9b4f-53a2965391d5\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 22,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"e6d899ba-4539-441e-9b4f-53a2965391d5\",\n                        \"branch_id\": \"27273ea7-57f4-46dd-849d-0360720a4197\",\n                        \"department_id\": \"18c022ca-3e2f-4356-8bdc-51f75d0eebe9\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense Cohort 25 Batch 1\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"7910afd4-1d32-4a20-8ce4-f0855e973f20\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \" Futurense_Weekly Assessment FF13_8_Oct_Coding\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Examly Support (Inactive)\",\n                \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                \"user_role\": \"admin-Staff\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"7910afd4-1d32-4a20-8ce4-f0855e973f20\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense Cohort 13 Batch 1 - admin\",\n                                \"value\": \"f40bcd18-797e-4a39-a4a7-08fb6d51cf9d\",\n                                \"branch_id\": \"091dd92c-759c-4d84-a1f1-3f956256717c\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"f40bcd18-797e-4a39-a4a7-08fb6d51cf9d\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \" Futurense_Weekly Assessment FF13_8_Oct_Coding\",\n                        \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"createdAt\": \"2022-10-06T09:13:41.807Z\",\n                        \"createdBy\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"user_role\": \"admin-Staff\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2022-10-06T09:13:41.000Z\",\n                \"updatedAt\": \"2023-09-21T04:35:35.023Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"7910afd4-1d32-4a20-8ce4-f0855e973f20\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 3,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"7910afd4-1d32-4a20-8ce4-f0855e973f20\",\n                        \"branch_id\": \"091dd92c-759c-4d84-a1f1-3f956256717c\",\n                        \"department_id\": \"f40bcd18-797e-4a39-a4a7-08fb6d51cf9d\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense Cohort 13 Batch 1\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"48afe369-5b3f-4641-8850-06a3eb3078cb\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \" Jain Placement Assessments_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Super Admin\",\n                \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                \"user_role\": \"admin\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"48afe369-5b3f-4641-8850-06a3eb3078cb\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"JAIN University - admin\",\n                                \"value\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                                \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \" Jain Placement Assessments_MCQ\",\n                        \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"createdAt\": \"2024-10-17T09:55:25.393Z\",\n                        \"createdBy\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"user_role\": \"admin\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2024-10-17T09:55:25.000Z\",\n                \"updatedAt\": \"2024-10-17T09:55:25.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"48afe369-5b3f-4641-8850-06a3eb3078cb\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 40,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"48afe369-5b3f-4641-8850-06a3eb3078cb\",\n                        \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                        \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"JAIN University\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"8e703aff-85cc-440f-ab50-9e00f3022d01\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \" Jain_Python_Sales_Dataset \",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Super Admin\",\n                \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                \"user_role\": \"admin\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"8e703aff-85cc-440f-ab50-9e00f3022d01\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense - admin\",\n                                \"value\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                                \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \" Jain_Python_Sales_Dataset \",\n                        \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"createdAt\": \"2022-09-28T12:01:02.389Z\",\n                        \"createdBy\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"user_role\": \"admin\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2022-09-28T12:01:02.000Z\",\n                \"updatedAt\": \"2022-09-28T12:01:02.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"8e703aff-85cc-440f-ab50-9e00f3022d01\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 6,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"8e703aff-85cc-440f-ab50-9e00f3022d01\",\n                        \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                        \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"2d87bd76-557f-4d3f-976f-896f8b882184\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \" Jain_T1_COMPMATH_RT_WK1_211022_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Jacob Jojy\",\n                \"user_id\": \"ad9bb453-562d-4f36-b530-53c9c9fe4868\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"2d87bd76-557f-4d3f-976f-896f8b882184\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"JAIN University - admin\",\n                                \"value\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                                \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \" Jain_T1_COMPMATH_RT_WK1_211022_MCQ\",\n                        \"user_id\": \"ad9bb453-562d-4f36-b530-53c9c9fe4868\",\n                        \"createdAt\": \"2022-11-02T06:56:15.950Z\",\n                        \"createdBy\": \"ad9bb453-562d-4f36-b530-53c9c9fe4868\",\n                        \"user_role\": \"admin-Staff\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2022-11-02T06:56:15.000Z\",\n                \"updatedAt\": \"2024-07-21T11:53:34.254Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"2d87bd76-557f-4d3f-976f-896f8b882184\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 3,\n                \"questionCount\": 15,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"2d87bd76-557f-4d3f-976f-896f8b882184\",\n                        \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                        \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"JAIN University\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"25418d22-e00d-4e2f-96bc-5f198cbad27e\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \" Python_Sales_Dataset \",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Examly Support (Inactive)\",\n                \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                \"user_role\": \"admin-Staff\",\n                \"imported\": \"is_imported_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": null,\n                \"status\": 1,\n                \"createdAt\": \"2022-06-02T10:40:08.000Z\",\n                \"updatedAt\": \"2023-09-21T04:35:35.023Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"25418d22-e00d-4e2f-96bc-5f198cbad27e\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 8,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"25418d22-e00d-4e2f-96bc-5f198cbad27e\",\n                        \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                        \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"18687671-72f3-4f3d-be1c-8edb6d7c3eb0\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"2nd Year_Jain_Internship_AIDE_Week 6_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Chaitra Krishnaprasad\",\n                \"user_id\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"18687671-72f3-4f3d-be1c-8edb6d7c3eb0\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"JAIN University - admin\",\n                                \"value\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                                \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"2nd Year_Jain_Internship_Week 6_MCQ\",\n                        \"user_id\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                        \"createdAt\": \"2024-05-10T07:04:50.616Z\",\n                        \"createdBy\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    },\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"18687671-72f3-4f3d-be1c-8edb6d7c3eb0\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"JAIN University - admin\",\n                                \"value\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                                \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"2nd Year_Jain_Internship_AIDE_Week 6_MCQ\",\n                        \"editedAt\": \"2024-05-10T07:06:00.980Z\",\n                        \"editedBy\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                        \"visibility\": \"Within Department\",\n                        \"oldUpdatedAt\": \"2024-05-10T07:04:50.000Z\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2024-05-10T07:04:50.000Z\",\n                \"updatedAt\": \"2024-05-10T07:06:00.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"18687671-72f3-4f3d-be1c-8edb6d7c3eb0\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 30,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"18687671-72f3-4f3d-be1c-8edb6d7c3eb0\",\n                        \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                        \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"JAIN University\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"7d537946-dd20-498d-9c85-8e7f7268194a\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"2nd Year_Jain_Internship_Week 5_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Super Admin\",\n                \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                \"user_role\": \"admin\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"7d537946-dd20-498d-9c85-8e7f7268194a\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"JAIN University - admin\",\n                                \"value\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                                \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"2nd Year_Jain_Internship_Week 5_MCQ\",\n                        \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"createdAt\": \"2024-05-03T10:01:06.819Z\",\n                        \"createdBy\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"user_role\": \"admin\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2024-05-03T10:01:06.000Z\",\n                \"updatedAt\": \"2024-05-03T10:01:06.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"7d537946-dd20-498d-9c85-8e7f7268194a\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 20,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"7d537946-dd20-498d-9c85-8e7f7268194a\",\n                        \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                        \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"JAIN University\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"0fc0544a-113b-4cd4-bd56-dbe1c641acb4\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"2nd Year_Jain_Internship_Week 7_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Chaitra Krishnaprasad\",\n                \"user_id\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"0fc0544a-113b-4cd4-bd56-dbe1c641acb4\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"JAIN University - admin\",\n                                \"value\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                                \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"2nd Year_Jain_Internship_Week 7_MCQ\",\n                        \"user_id\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                        \"createdAt\": \"2024-05-30T07:13:48.756Z\",\n                        \"createdBy\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2024-05-30T07:13:48.000Z\",\n                \"updatedAt\": \"2024-05-30T07:13:48.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"0fc0544a-113b-4cd4-bd56-dbe1c641acb4\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 20,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"0fc0544a-113b-4cd4-bd56-dbe1c641acb4\",\n                        \"branch_id\": \"edce85f9-14fc-4792-aeaa-53e5d26da76e\",\n                        \"department_id\": \"fc60ebd1-0489-4c57-b799-b47ba9909aea\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"JAIN University\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"3677c519-c26a-4ec4-ae9e-4e28dc9d36f4\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"3 to 5 years_Pre-screening_Azure_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"VISMITA AS\",\n                \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"3677c519-c26a-4ec4-ae9e-4e28dc9d36f4\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Pre screening Assessment - admin\",\n                                \"value\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                                \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"3 to 5 years_Pre-screening_Azure_MCQ\",\n                        \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"createdAt\": \"2023-08-25T13:53:01.453Z\",\n                        \"createdBy\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-08-25T13:53:01.000Z\",\n                \"updatedAt\": \"2023-08-25T13:53:01.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"3677c519-c26a-4ec4-ae9e-4e28dc9d36f4\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 7,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"3677c519-c26a-4ec4-ae9e-4e28dc9d36f4\",\n                        \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                        \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Pre screening Assessment\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"8a02f918-1115-44de-8cf5-b209ff679627\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"3 to 5 years_Pre-screening_Data Analysis_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"VISMITA AS\",\n                \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"8a02f918-1115-44de-8cf5-b209ff679627\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Pre screening Assessment - admin\",\n                                \"value\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                                \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"3 to 5 years_Pre-screening_Data Analysis_MCQ\",\n                        \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"createdAt\": \"2023-08-25T13:56:35.282Z\",\n                        \"createdBy\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-08-25T13:56:35.000Z\",\n                \"updatedAt\": \"2023-08-25T13:56:35.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"8a02f918-1115-44de-8cf5-b209ff679627\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 7,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"8a02f918-1115-44de-8cf5-b209ff679627\",\n                        \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                        \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Pre screening Assessment\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"a44eccfb-ef65-4ee6-a189-8bc2f7867c91\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"3 to 5 years_Pre-screening_PySpark_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"VISMITA AS\",\n                \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"a44eccfb-ef65-4ee6-a189-8bc2f7867c91\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Pre screening Assessment - admin\",\n                                \"value\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                                \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"3 to 5 years_Pre-screening_PySpark_MCQ\",\n                        \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"createdAt\": \"2023-08-25T13:59:54.452Z\",\n                        \"createdBy\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-08-25T13:59:54.000Z\",\n                \"updatedAt\": \"2023-08-25T13:59:54.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"a44eccfb-ef65-4ee6-a189-8bc2f7867c91\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 11,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"a44eccfb-ef65-4ee6-a189-8bc2f7867c91\",\n                        \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                        \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Pre screening Assessment\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"0e9eaec0-d034-4951-89c0-aeafa495ca08\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"3 to 5 years_Pre-screening_Python Advance_Coding\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"VISMITA AS\",\n                \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"0e9eaec0-d034-4951-89c0-aeafa495ca08\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Pre screening Assessment - admin\",\n                                \"value\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                                \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"3 to 5 years_Pre-screening_Python Advance_Coding\",\n                        \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"createdAt\": \"2023-08-25T11:01:38.062Z\",\n                        \"createdBy\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-08-25T11:01:38.000Z\",\n                \"updatedAt\": \"2023-08-25T11:01:38.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"0e9eaec0-d034-4951-89c0-aeafa495ca08\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 2,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"0e9eaec0-d034-4951-89c0-aeafa495ca08\",\n                        \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                        \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Pre screening Assessment\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"cd5aefb7-9404-4f28-affd-5ea6896d1694\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"3 to 5 years_Pre-screening_Python Advance_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"VISMITA AS\",\n                \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"cd5aefb7-9404-4f28-affd-5ea6896d1694\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Pre screening Assessment - admin\",\n                                \"value\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                                \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"3 to 5 years_Pre-screening_Python Advance_MCQ\",\n                        \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"createdAt\": \"2023-08-25T10:54:15.337Z\",\n                        \"createdBy\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-08-25T10:54:15.000Z\",\n                \"updatedAt\": \"2023-08-25T10:54:15.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"cd5aefb7-9404-4f28-affd-5ea6896d1694\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 10,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"cd5aefb7-9404-4f28-affd-5ea6896d1694\",\n                        \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                        \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Pre screening Assessment\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"3380bded-cbd6-4e72-80a4-7a2f213d1bb7\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"3 to 5 years_Pre-screening_SQL_Coding\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"VISMITA AS\",\n                \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"3380bded-cbd6-4e72-80a4-7a2f213d1bb7\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Pre screening Assessment - admin\",\n                                \"value\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                                \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"3 to 5 years_Pre-screening_SQL_Coding\",\n                        \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"createdAt\": \"2023-08-25T14:14:28.339Z\",\n                        \"createdBy\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-08-25T14:14:28.000Z\",\n                \"updatedAt\": \"2023-08-25T14:14:28.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"3380bded-cbd6-4e72-80a4-7a2f213d1bb7\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 3,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"3380bded-cbd6-4e72-80a4-7a2f213d1bb7\",\n                        \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                        \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Pre screening Assessment\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"c62a8ef0-95a4-4701-adbf-d6667f5959e5\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"3 to 5 years_Pre-screening_SQL_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"VISMITA AS\",\n                \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"c62a8ef0-95a4-4701-adbf-d6667f5959e5\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Pre screening Assessment - admin\",\n                                \"value\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                                \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"3 to 5 years_Pre-screening_SQL_MCQ\",\n                        \"user_id\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"createdAt\": \"2023-08-25T14:03:30.424Z\",\n                        \"createdBy\": \"2516d3a8-84fe-4160-a0f3-e7db61ce994c\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-08-25T14:03:30.000Z\",\n                \"updatedAt\": \"2023-08-25T14:03:30.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"c62a8ef0-95a4-4701-adbf-d6667f5959e5\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 12,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"c62a8ef0-95a4-4701-adbf-d6667f5959e5\",\n                        \"branch_id\": \"3e632c0d-cbdf-4d04-ab5c-8d19a0b389cb\",\n                        \"department_id\": \"af952086-0c94-4c06-887e-043ffa185dd6\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Pre screening Assessment\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"4b85d179-8b4d-41bf-8a0a-352133ff4ce2\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"ADH_Java COD\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Examly Support (Inactive)\",\n                \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                \"user_role\": \"admin-Staff\",\n                \"imported\": \"is_imported_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"4b85d179-8b4d-41bf-8a0a-352133ff4ce2\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense - admin\",\n                                \"value\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                                \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"ADH_Java COD\",\n                        \"editedAt\": \"2021-12-24T05:08:53.009Z\",\n                        \"editedBy\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"visibility\": \"Within Department\",\n                        \"oldUpdatedAt\": \"2021-12-24T05:07:46.000Z\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2021-12-24T05:07:46.000Z\",\n                \"updatedAt\": \"2023-09-21T04:35:35.023Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"4b85d179-8b4d-41bf-8a0a-352133ff4ce2\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 2,\n                \"questionCount\": 2,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"4b85d179-8b4d-41bf-8a0a-352133ff4ce2\",\n                        \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                        \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"b89e97cf-dc34-455b-a86b-fef59b85080b\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"ADH_Java MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Examly Support (Inactive)\",\n                \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                \"user_role\": \"admin-Staff\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"b89e97cf-dc34-455b-a86b-fef59b85080b\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense - admin\",\n                                \"value\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                                \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"Java MCQ\",\n                        \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"createdAt\": \"2021-12-22T09:16:11.147Z\",\n                        \"createdBy\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"user_role\": \"admin-Staff\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    },\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"b89e97cf-dc34-455b-a86b-fef59b85080b\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense - admin\",\n                                \"value\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                                \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"ADH_Java MCQ\",\n                        \"editedAt\": \"2021-12-22T10:49:41.091Z\",\n                        \"editedBy\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"visibility\": \"Within Department\",\n                        \"oldUpdatedAt\": \"2021-12-22T09:16:11.000Z\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2021-12-22T09:16:11.000Z\",\n                \"updatedAt\": \"2023-09-21T04:35:35.023Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"b89e97cf-dc34-455b-a86b-fef59b85080b\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 35,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"b89e97cf-dc34-455b-a86b-fef59b85080b\",\n                        \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                        \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"25024a2f-4f2b-4a7c-a106-96350815f683\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"AICPA Assessment June 27 2022\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Examly Support (Inactive)\",\n                \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                \"user_role\": \"admin-Staff\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"25024a2f-4f2b-4a7c-a106-96350815f683\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense - admin\",\n                                \"value\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                                \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"AICPA Assessment June 27 2022\",\n                        \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"createdAt\": \"2022-06-24T09:57:23.862Z\",\n                        \"createdBy\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"user_role\": \"admin-Staff\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2022-06-24T09:57:23.000Z\",\n                \"updatedAt\": \"2023-09-21T04:35:35.023Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"25024a2f-4f2b-4a7c-a106-96350815f683\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 45,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"25024a2f-4f2b-4a7c-a106-96350815f683\",\n                        \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                        \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"bbaff666-753f-4b58-bc47-322d9c2d125b\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"AICPA Aug 13 2022 Certification Test\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Examly Support (Inactive)\",\n                \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                \"user_role\": \"admin-Staff\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"bbaff666-753f-4b58-bc47-322d9c2d125b\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense - admin\",\n                                \"value\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                                \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"AICPA Aug 13 2022 Certification Test\",\n                        \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"createdAt\": \"2022-08-03T09:47:24.063Z\",\n                        \"createdBy\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"user_role\": \"admin-Staff\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2022-08-03T09:47:24.000Z\",\n                \"updatedAt\": \"2023-09-21T04:35:35.023Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"bbaff666-753f-4b58-bc47-322d9c2d125b\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 3,\n                \"questionCount\": 45,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"bbaff666-753f-4b58-bc47-322d9c2d125b\",\n                        \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                        \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"aaedd394-921a-4c45-9c4b-8eb126f432cc\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"AICPA Aug05 2022 Mock Test\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Examly Support (Inactive)\",\n                \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                \"user_role\": \"admin-Staff\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"aaedd394-921a-4c45-9c4b-8eb126f432cc\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense - admin\",\n                                \"value\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                                \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"AICPA Aug05 2022 Mock Test\",\n                        \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"createdAt\": \"2022-08-02T10:44:49.980Z\",\n                        \"createdBy\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"user_role\": \"admin-Staff\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2022-08-02T10:44:49.000Z\",\n                \"updatedAt\": \"2023-09-21T04:35:35.023Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"aaedd394-921a-4c45-9c4b-8eb126f432cc\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 46,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"aaedd394-921a-4c45-9c4b-8eb126f432cc\",\n                        \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                        \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"6a7e8925-ed31-429b-9287-dba1a9fa4f8e\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"AICPA Mock Test June 24th\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Examly Support (Inactive)\",\n                \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                \"user_role\": \"admin-Staff\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"6a7e8925-ed31-429b-9287-dba1a9fa4f8e\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"Futurense - admin\",\n                                \"value\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                                \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"AICPA Mock Test June 24th\",\n                        \"user_id\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"createdAt\": \"2022-06-22T02:28:47.628Z\",\n                        \"createdBy\": \"0c3cf6de-7a3f-4260-a1d8-52b8acd2a162\",\n                        \"user_role\": \"admin-Staff\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2022-06-22T02:28:47.000Z\",\n                \"updatedAt\": \"2023-09-21T04:35:35.023Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"6a7e8925-ed31-429b-9287-dba1a9fa4f8e\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 46,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"6a7e8925-ed31-429b-9287-dba1a9fa4f8e\",\n                        \"branch_id\": \"d9dc4d6e-77e2-46de-ac38-122c4b4470bd\",\n                        \"department_id\": \"70d8f388-fba9-4727-b79d-4ef2662ab4dc\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"Futurense\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"536df8dc-2468-4847-a2b0-ebaa5e49d414\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"AICPA_Blockchain Fundamentals_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Super Admin\",\n                \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                \"user_role\": \"admin\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"536df8dc-2468-4847-a2b0-ebaa5e49d414\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"AICPA - admin\",\n                                \"value\": \"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\",\n                                \"branch_id\": \"b011edd4-2c8b-4f14-9dac-c8b979ca62d0\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"AICPA_Blockchain Fundamentals_MCQ\",\n                        \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"createdAt\": \"2023-04-16T14:37:10.326Z\",\n                        \"createdBy\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"user_role\": \"admin\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-04-16T14:37:10.000Z\",\n                \"updatedAt\": \"2023-04-16T14:37:10.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"536df8dc-2468-4847-a2b0-ebaa5e49d414\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 40,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"536df8dc-2468-4847-a2b0-ebaa5e49d414\",\n                        \"branch_id\": \"b011edd4-2c8b-4f14-9dac-c8b979ca62d0\",\n                        \"department_id\": \"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"AICPA\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"fa47080f-0e85-471d-b34a-b6cd1ac3bcd9\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"AICPA_Blockchain Fundamentals_Subjective\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Super Admin\",\n                \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                \"user_role\": \"admin\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"fa47080f-0e85-471d-b34a-b6cd1ac3bcd9\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"AICPA - admin\",\n                                \"value\": \"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\",\n                                \"branch_id\": \"b011edd4-2c8b-4f14-9dac-c8b979ca62d0\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"AICPA_Blockchain Fundamentals_Subjective\",\n                        \"user_id\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"createdAt\": \"2023-04-16T14:40:21.999Z\",\n                        \"createdBy\": \"57a7e31b-a1ca-424e-b45a-d531b9f0aee8\",\n                        \"user_role\": \"admin\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2023-04-16T14:40:21.000Z\",\n                \"updatedAt\": \"2023-04-16T14:40:21.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"fa47080f-0e85-471d-b34a-b6cd1ac3bcd9\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 5,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"fa47080f-0e85-471d-b34a-b6cd1ac3bcd9\",\n                        \"branch_id\": \"b011edd4-2c8b-4f14-9dac-c8b979ca62d0\",\n                        \"department_id\": \"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"AICPA\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            },\n            {\n                \"qb_id\": \"01f3578f-9f7d-44ec-889d-966f407948d6\",\n                \"qb_description\": null,\n                \"qb_code\": null,\n                \"qb_name\": \"AICPA_CBA certification exams_MCQ\",\n                \"price\": 0,\n                \"visibility\": \"Within Department\",\n                \"createdBy\": \"Chaitra Krishnaprasad\",\n                \"user_id\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                \"user_role\": \"admin-Head\",\n                \"imported\": \"original_question_bank\",\n                \"preview_time\": 0,\n                \"last_sale_at\": null,\n                \"history\": [\n                    {\n                        \"tags\": [],\n                        \"price\": 0,\n                        \"qb_id\": \"01f3578f-9f7d-44ec-889d-966f407948d6\",\n                        \"b_d_id\": [\n                            {\n                                \"label\": \"AICPA - admin\",\n                                \"value\": \"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\",\n                                \"branch_id\": \"b011edd4-2c8b-4f14-9dac-c8b979ca62d0\",\n                                \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                                \"department_id\": \"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\"\n                            }\n                        ],\n                        \"qb_code\": null,\n                        \"qb_name\": \"AICPA_CBA certification exams_MCQ\",\n                        \"user_id\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                        \"createdAt\": \"2024-05-24T08:47:59.603Z\",\n                        \"createdBy\": \"f1194df4-adb7-47d9-8e0a-9c7e35d0c51b\",\n                        \"user_role\": \"admin-Head\",\n                        \"visibility\": \"Within Department\",\n                        \"qb_description\": null,\n                        \"departmentChanged\": true,\n                        \"mainDepartmentUser\": true\n                    }\n                ],\n                \"status\": 1,\n                \"createdAt\": \"2024-05-24T08:47:59.000Z\",\n                \"updatedAt\": \"2024-05-24T08:47:59.000Z\",\n                \"question_bank_branch_department\": [\n                    {\n                        \"qb_id\": \"01f3578f-9f7d-44ec-889d-966f407948d6\"\n                    }\n                ],\n                \"tags\": [],\n                \"errorCount\": 0,\n                \"questionCount\": 40,\n                \"branches\": [\n                    {\n                        \"qb_id\": \"01f3578f-9f7d-44ec-889d-966f407948d6\",\n                        \"branch_id\": \"b011edd4-2c8b-4f14-9dac-c8b979ca62d0\",\n                        \"department_id\": \"3038ee3e-91b6-41a2-a464-fb6be6ad1d23\",\n                        \"school_id\": \"99449c5f-0ee5-4211-a326-7881cb9e4387\",\n                        \"share\": false,\n                        \"domain_url\": null,\n                        \"school_branches\": {\n                            \"branch_name\": \"AICPA\"\n                        },\n                        \"school_branch_departments\": {\n                            \"department_name\": \"admin\"\n                        }\n                    }\n                ],\n                \"user_share\": [],\n                \"isFeedBack\": false\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "questionfilter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vyc19kb21haW5faWQiOjIxMDA2ODIsInVzZXJfaWQiOiI1N2E3ZTMxYi1hMWNhLTQyNGUtYjQ1YS1kNTMxYjlmMGFlZTgiLCJzY2hvb2xfaWQiOiI5OTQ0OWM1Zi0wZWU1LTQyMTEtYTMyNi03ODgxY2I5ZTQzODciLCJlbWFpbCI6ImVsb25AaWFtbmVvLmFpIiwiZW1haWxfdmVyaWZpZWQiOjEsIm5hbWUiOiJTdXBlciRBZG1pbiIsInBob25lIjoiMTIzNDU2Nzg5MCIsInBob25lX3ZlcmlmaWVkIjowLCJwcm9maWxlX3BpYyI6bnVsbCwiZ2VuZGVyIjoiTWFsZSIsInJvbGxfbm8iOm51bGwsInBvcnRhbF9hY2Nlc3Nfc3RhdHVzIjpudWxsLCJlbWFpbF9yZXF1ZXN0ZWRfaGlzdG9yeSI6bnVsbCwiZW1haWxfcmVxdWVzdGVkIjpudWxsLCJwcmltYXJ5X2VtYWlsIjoiZWxvbkBpYW1uZW8uYWkiLCJwYXJlbnRfY29udGFjdCI6bnVsbCwicGhvbmVfbnVtYmVyIjpudWxsLCJpc19mb2xsb3dpbmdfcHVibGljX2ZlZWQiOmZhbHNlLCJiYWRnZSI6MCwic3VwZXJiYWRnZSI6MCwiY29uc3VtZWRfYmFkZ2UiOjAsImNvbnN1bWVkX3N1cGVyYmFkZ2UiOjAsIm1hbm51YWxiYWRnZXMiOm51bGwsInN0YXR1cyI6Ikludml0ZWQiLCJkb2IiOm51bGwsInN0YWZmX3R5cGUiOiJJbnRlcm5hbCIsInZlcmlmaWVkX3BpYyI6bnVsbCwiYXBwbGljYXRpb25fbm8iOm51bGwsImhhc2hfaWQiOiIyYzdjMWE3YTVjZDgxYzRjMzdmZGYxODQ4Y2YwNWQxMzY1MDMxNTM3IiwicmVzZXRfcGFzc3dvcmQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTEyLTE2VDExOjM1OjQzLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTA4VDA5OjQ2OjU2LjAwMFoiLCJkZWxldGVkQXQiOm51bGwsInJlZGlzUm9sZSI6ImFkbWluIiwic2Vzc2lvbklEIjoiNld6QS9zYmoxT0JrL2NPeE16RittQT09IiwiZW5hYmxlVHdvRmFjdG9yQXV0aGVudGljYXRpb24iOmZhbHNlLCJpYXQiOjE3NDA5OTIzNTUsImV4cCI6MTc0MTAzNTU1NX0.vHwR1QHWCuMbrJI_t7iVlJyuNJZWtQcETHZBjp5W9So"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://admin.learn.futurense.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://admin.learn.futurense.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"qb_id\":\"e6d899ba-4539-441e-9b4f-53a2965391d5\",\"type\":\"Single\",\"page\":1,\"limit\":50}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.examly.io/api/v2/questionfilter",
+					"protocol": "https",
+					"host": [
+						"api",
+						"examly",
+						"io"
+					],
+					"path": [
+						"api",
+						"v2",
+						"questionfilter"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.examly.io/api/v2/questionfilter' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vyc19kb21haW5faWQiOjIxMDA2ODIsInVzZXJfaWQiOiI1N2E3ZTMxYi1hMWNhLTQyNGUtYjQ1YS1kNTMxYjlmMGFlZTgiLCJzY2hvb2xfaWQiOiI5OTQ0OWM1Zi0wZWU1LTQyMTEtYTMyNi03ODgxY2I5ZTQzODciLCJlbWFpbCI6ImVsb25AaWFtbmVvLmFpIiwiZW1haWxfdmVyaWZpZWQiOjEsIm5hbWUiOiJTdXBlciRBZG1pbiIsInBob25lIjoiMTIzNDU2Nzg5MCIsInBob25lX3ZlcmlmaWVkIjowLCJwcm9maWxlX3BpYyI6bnVsbCwiZ2VuZGVyIjoiTWFsZSIsInJvbGxfbm8iOm51bGwsInBvcnRhbF9hY2Nlc3Nfc3RhdHVzIjpudWxsLCJlbWFpbF9yZXF1ZXN0ZWRfaGlzdG9yeSI6bnVsbCwiZW1haWxfcmVxdWVzdGVkIjpudWxsLCJwcmltYXJ5X2VtYWlsIjoiZWxvbkBpYW1uZW8uYWkiLCJwYXJlbnRfY29udGFjdCI6bnVsbCwicGhvbmVfbnVtYmVyIjpudWxsLCJpc19mb2xsb3dpbmdfcHVibGljX2ZlZWQiOmZhbHNlLCJiYWRnZSI6MCwic3VwZXJiYWRnZSI6MCwiY29uc3VtZWRfYmFkZ2UiOjAsImNvbnN1bWVkX3N1cGVyYmFkZ2UiOjAsIm1hbm51YWxiYWRnZXMiOm51bGwsInN0YXR1cyI6Ikludml0ZWQiLCJkb2IiOm51bGwsInN0YWZmX3R5cGUiOiJJbnRlcm5hbCIsInZlcmlmaWVkX3BpYyI6bnVsbCwiYXBwbGljYXRpb25fbm8iOm51bGwsImhhc2hfaWQiOiIyYzdjMWE3YTVjZDgxYzRjMzdmZGYxODQ4Y2YwNWQxMzY1MDMxNTM3IiwicmVzZXRfcGFzc3dvcmQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIxLTEyLTE2VDExOjM1OjQzLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDI1LTAyLTA4VDA5OjQ2OjU2LjAwMFoiLCJkZWxldGVkQXQiOm51bGwsInJlZGlzUm9sZSI6ImFkbWluIiwic2Vzc2lvbklEIjoiNld6QS9zYmoxT0JrL2NPeE16RittQT09IiwiZW5hYmxlVHdvRmFjdG9yQXV0aGVudGljYXRpb24iOmZhbHNlLCJpYXQiOjE3NDA5OTIzNTUsImV4cCI6MTc0MTAzNTU1NX0.vHwR1QHWCuMbrJI_t7iVlJyuNJZWtQcETHZBjp5W9So' \\\r\n  -H 'content-type: application/json' \\\r\n  -H 'origin: https://admin.learn.futurense.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://admin.learn.futurense.com/' \\\r\n  -H 'sec-ch-ua: \"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"qb_id\":\"e6d899ba-4539-441e-9b4f-53a2965391d5\",\"type\":\"Single\",\"page\":1,\"limit\":50}'"
+			},
+			"response": []
+		},
+		{
+			"name": "login again test",
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "access-control-request-headers",
+						"value": "content-type"
+					},
+					{
+						"key": "access-control-request-method",
+						"value": "POST"
+					},
+					{
+						"key": "origin",
+						"value": "https://admin.learn.futurense.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://admin.learn.futurense.com/"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://api.examly.io/api/users/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"examly",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.examly.io/api/users/login' \\\r\n  -X 'OPTIONS' \\\r\n  -H 'accept: */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'access-control-request-headers: content-type' \\\r\n  -H 'access-control-request-method: POST' \\\r\n  -H 'origin: https://admin.learn.futurense.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://admin.learn.futurense.com/' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: cross-site' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		}
+	]
+}
